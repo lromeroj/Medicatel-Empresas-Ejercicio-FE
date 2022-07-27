@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+:root {
+    --primary-color: #005F7F;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    grid-template-areas: "left right";
+}
+.main-image {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--primary-color);
+}
+.main-image div {
+    max-width: 100%;
+    max-height: 860px;
+    position: relative;
+    left: 20px;
+}
+.main-image div img {
+    width: 100%;
+    object-fit: contain;
+}
+.login-form {
+    grid-area: right;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 703px;
+    margin: 0 auto;
+}
+.main-text {
+    width: 100%;
+    color: var(--primary-color);
+    font-weight: bolder;
+    margin-bottom: 110px;
+}
+.text-1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.text-2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+input {
+    height: 80px;
+    width: 100%;
+    color: var(--primary-color);
+}
+#email{
+    margin-bottom: 60px;
+}
+.form-floating label{
+    opacity: 0.3;
+}
+.link-contrasenia{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-bottom: 65px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.link-contrasenia:hover{
+    color: var(--primary-color);
+}
+.btn-ingresar{
+    width: 700px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+}
+.link-registrate{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.link-registrate:hover{
+    color: var(--primary-color);
+}
+.form-control{
+    color: var(--primary-color) !important;
+}
+
+@media screen and (max-width: 1600px){
+    .main-image {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .login-form, .form, button{
+        max-width: 500px;
+    }
+}
