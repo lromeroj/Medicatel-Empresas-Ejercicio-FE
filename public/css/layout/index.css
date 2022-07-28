@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+:root {
+    --primary-color: #005F7F;
+    --secondary-color: #F8FBFD;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    grid-template-areas: "left right";
+}
+aside {
+    grid-area: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+}
+section {
+    grid-area: right;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+.bottom-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.bottom-info a {
+    color: #707070;
+    text-decoration: none;
+}
+.icons {
+    font-size: 20px;
+    color: black;
+    color: #707070;
+    margin-right: 20px;
+}
+.logout p{
+    display: inline;
+}
+.logo {
+    padding: 25px 37px 0 37px;
+    margin-bottom: 45px;
+}
+.user-logged-in {
+    background-color: var(--secondary-color);
+    margin: 0 21px 50px 21px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+.img-user, .name-user, .img-user img, .name-user p {
+    display: inline;
+}
+.img-user img {
+    width: 40px;
+}
+.name-user p {
+    margin: 0 10px;
+}
+.items {
+    display: flex;
+    align-items: center;
+}
+.active {
+    background-color: var(--primary-color) !important;
+    width: 8px;
+    height: 54px;
+    position: relative;
+    left: 0;
+    margin-right: 42px;
+}
+.items p {
+    display: inline;
+}
+#item-1 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: start;
+    padding-left: 0;
+}
+#item-2 {
+    padding: 15px 0 15px 50px;
+}
+
+section {
+    padding: 48px 130px 120px 130px;
+}
+.top-section {
+    display: flex;
+    justify-content: end;
+}
+.top-section button{
+    background-color: #00B2E3;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    height: 35px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.top-section button i{
+    margin-right: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.user-logged-in-section {
+    background-color: var(--secondary-color);
+    height: 35px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 13px;
+}

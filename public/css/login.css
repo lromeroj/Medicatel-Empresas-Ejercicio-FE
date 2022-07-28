@@ -110,3 +110,10 @@ input {
         max-width: 500px;
     }
 }
+
+@media screen and (max-width: 1100px){
+    .login-form, .form, button{
+        max-width: 400px;
+    }
+    
+}
