@@ -29,6 +29,7 @@ section {
     grid-area: right;
     height: 100vh;
     background-color: var(--secondary-color);
+    padding: 40px 90px 120px 90px;
 }
 .bottom-info{
     width: 100%;
@@ -96,9 +97,7 @@ section {
     padding: 15px 0 15px 50px;
 }
 
-section {
-    padding: 48px 130px 120px 130px;
-}
+
 .top-section {
     display: flex;
     justify-content: end;

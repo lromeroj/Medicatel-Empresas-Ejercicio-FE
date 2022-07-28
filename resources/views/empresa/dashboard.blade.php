@@ -90,7 +90,7 @@
                         <p>COVID-19</p>
                     </div>
                     <div class="item-covid">
-                        <i class="bi bi-calendar3 icons"></i>
+                        <i class="bi bi-heart icons"></i>
                         <div>
                             <h1>29/100</h1>
                             <h4>Positivos / Negativos</h4>
