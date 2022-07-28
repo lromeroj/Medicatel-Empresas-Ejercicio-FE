@@ -27,7 +27,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -53,7 +52,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -79,7 +77,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -105,7 +102,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -131,7 +127,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -157,7 +152,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -183,7 +177,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -209,7 +202,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -235,7 +227,6 @@
                         <div class="ciudad">Tegucigalpa</div>
                     </div>
                 </div>
-                <hr>
                 <div class="card-body">
                     <div class="body-item">
                         <i class="bi bi-telephone"></i>
@@ -252,31 +243,7 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <hr>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
