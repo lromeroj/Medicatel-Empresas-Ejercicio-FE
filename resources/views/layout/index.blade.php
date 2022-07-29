@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="bottom-info">
-                <a class="logout" href="{{route('login')}}">
+                <a class="logout" href="{{route('cerrar_sesion')}}">
                     <i class="bi bi-door-closed icons"></i>
                     <p>Cerrar Sesión</p>
                 </a>

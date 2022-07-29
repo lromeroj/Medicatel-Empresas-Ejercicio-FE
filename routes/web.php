@@ -8,6 +8,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('login',             'login')            ->name('login');
     Route::get('dashboard',         'dashboard')        ->name('dashboard');
     Route::get('colaboradores',     'colaboradores')    ->name('colaboradores');
-
+    
     Route::post('dashboard',        'iniciar_sesion')   ->name('iniciar_sesion');
+    Route::get('cerrar_sesion',     'cerrar_sesion')    ->name('cerrar_sesion');
 });

@@ -21,10 +21,8 @@ class PageController extends Controller
 
     public function iniciar_sesion(Request $request)
     {
-
         $email = $request->input('email');
         $password = $request->input('password');
-
         try {
             $response = 
             Http::withBasicAuth('api-Test', 'Holamundo')
@@ -44,28 +42,40 @@ class PageController extends Controller
 
     public function dashboard(Request $request)
     {
-        $response = json_decode(Cookie::get('usuario'));
-        return view('empresa.dashboard', compact('response'));
+        if (Cookie::get('usuario')) {
+            $response = json_decode(Cookie::get('usuario'));
+            return view('empresa.dashboard', compact('response'));
+        } else {
+            return redirect('login');
+        }
     }
     
     public function colaboradores(Request $request)
     {
-        try {
-            $response = json_decode(Cookie::get('usuario'));
-            $colaboradores = 
-            Http::withBasicAuth('api-Test', 'Holamundo')
-                  ->get('https://apiservices.medicatel.red/ApiTest/colaboradores');
-                    //dd($colaboradores);
-
-            $c = json_decode($colaboradores->body());
-            
-            // return view('empresa.colaboradores', compact('response', 'colaboradores'));
-            return view('empresa.colaboradores', [
-                "response" =>$response,
-                "colaboradores"=> $c,
-            ]);
-        } catch (\Throwable $th) {
-            dd($th);
+        if (Cookie::get('usuario')) {
+            try {
+                $response = json_decode(Cookie::get('usuario'));
+                $colaboradores = 
+                Http::withBasicAuth('api-Test', 'Holamundo')
+                      ->get('https://apiservices.medicatel.red/ApiTest/colaboradores');
+                        //dd($colaboradores);
+    
+                $c = json_decode($colaboradores->body());
+                
+                // return view('empresa.colaboradores', compact('response', 'colaboradores'));
+                return view('empresa.colaboradores', [
+                    "response" =>$response,
+                    "colaboradores"=> $c,
+                ]);
+            } catch (\Throwable $th) {
+                dd($th);
+            }
+        } else {
+            return redirect('login');
         }
+    }
+    public function cerrar_sesion(){
+        $cookie = Cookie::forget('usuario');
+        return redirect('login')->withCookie($cookie);
     }
 }
