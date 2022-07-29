@@ -6,7 +6,7 @@
         <div class="main-info">
             <div class="welcome">
                 <div>
-                    <h1>Hola, <b>Fundación Grupo Terra</b></h1>
+                    <h1>Hola, <b>{{$response->nombre}}</b></h1>
                     <p>Bienvenido a Red Medicatel.<br>Agenda y ten toda la información médica de tu empresa.</p>
                     <button type="submit">Agendar</button>
                 </div>
@@ -17,8 +17,8 @@
                         <img src="img/logo-fundacion-terra.png" alt="Logo grupo terra">
                     </div>
                     <div>
-                        <h1>Fundación Grupo Terra</h1>
-                        <h5>correo@fundaciongrupoterra.com</h5>
+                        <h1>{{$response->nombre}}</h1>
+                        <h5>{{$response->correo}}</h5>
                     </div>
                 </div>
                 <div class="info">
@@ -28,7 +28,7 @@
                             <p>RTN: </p>
                         </div>
                         <div class="detail">
-                            0801-1900-0000000
+                            {{$response->rtn}}
                         </div>
                     </div>
                     <div class="info-items">
@@ -37,7 +37,7 @@
                             <p>Teléfono: </p>
                         </div>
                         <div class="detail">
-                            (504) 2222-2222
+                            {{$response->telefono}}
                         </div>
                     </div>
                     <div class="info-items">
@@ -46,7 +46,7 @@
                             <p>País: </p>
                         </div>
                         <div class="detail">
-                            Honduras
+                            {{$response->pais}}
                         </div>
                     </div>
                     <div class="info-items">
@@ -55,7 +55,7 @@
                             <p>Ciudad: </p>
                         </div>
                         <div class="detail">
-                            Tegucigalpa
+                            {{$response->ciudad}}
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     <div class="item-detail">
                         <i class="bi bi-people icons"></i>
                         <div>
-                            <h1>123</h1>
+                            <h1>{{$response->colaboradores}}</h1>
                             <h4>Colaboradores</h4>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="item-detail">
                         <i class="bi bi-calendar3 icons"></i>
                         <div>
-                            <h1>29</h1>
+                            <h1>{{$response->citas_agendadas}}</h1>
                             <h4>Citas Agendadas</h4>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     <div class="item-covid">
                         <i class="bi bi-heart icons"></i>
                         <div>
-                            <h1>29/100</h1>
+                            <h1>{{$response->positivas}}/{{$response->negativas}}</h1>
                             <h4>Positivos / Negativos</h4>
                         </div>
                     </div>

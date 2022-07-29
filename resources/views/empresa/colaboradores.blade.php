@@ -18,233 +18,63 @@
             </div>
         </div>
         <div class="colaboradores-grid">
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
+            @foreach ($colaboradores as $colaborador)
+                <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-header">
+                        <img src="img/user.png" alt="Imagen de colaborador">
+                        <div>
+                            <div class="nombre">{{$colaborador->nombre}} {{$colaborador->apellido}}</div>
+                            <div class="cargo">{{$colaborador->cargo}}</div>
+                            <div class="ciudad">{{$colaborador->ciudad}}</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="body-item">
+                            <i class="bi bi-hash"></i>
+                            <div class="id">{{$colaborador->id}}</div>
+                        </div>
+                        <div class="body-item">
+                            <i class="bi bi-telephone"></i>
+                            <div class="phone">{{$colaborador->telefono}}</div>
+                        </div>
+                        <div class="body-item">
+                            <i class="bi bi-envelope"></i>
+                            <div class="email">{{$colaborador->correo}}</div>
+                        </div>
                     </div>
                 </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/user.png" alt="Imagen de colaborador">
-                    <div>
-                        <div class="nombre">Juan Pedro Pérez</div>
-                        <div class="cargo">Cargo</div>
-                        <div class="ciudad">Tegucigalpa</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="id">0801-1900-0000000</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="phone">(504) 2222-2222</div>
-                    </div>
-                    <div class="body-item">
-                        <i class="bi bi-telephone"></i>
-                        <div class="email">juanperez@fundacionterra.com</div>
-                    </div>
-                </div>
-            </div>
-
-            
+            @endforeach
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="card modal-card">
+                    <div class="card-header modal-card-header">
+                        <img src="img/user.png" alt="Imagen de colaborador">
+                        <div>
+                            <div class="nombre">{{$colaborador->nombre}} {{$colaborador->apellido}}</div>
+                            <div class="cargo">{{$colaborador->cargo}}</div>
+                        </div>
+                    </div>
+                    <div class="card-body modal-card-body">
+                        <div class="modal-body-item">
+                            <i class="bi bi-hash"></i>
+                            <div class="id">{{$colaborador->id}}</div>
+                        </div>
+                        <div class="modal-body-item">
+                            <i class="bi bi-telephone"></i>
+                            <div class="phone">{{$colaborador->telefono}}</div>
+                        </div>
+                        <div class="modal-body-item">
+                            <i class="bi bi-envelope"></i>
+                            <div class="email">{{$colaborador->correo}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

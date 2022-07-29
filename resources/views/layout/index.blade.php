@@ -37,26 +37,33 @@
                         <img src="img/grupo-terra.png" alt="grupo terra logo">
                     </div>
                     <div class="name-user">
-                        <p>Fundación Grupo Terra</p>
+                        <p>{{$response->nombre}}</p>
                         <i class="bi bi-chevron-down"></i>
                     </div>
                 </div>
                 <div class="options">
-                    <div class="items" id="item-1">
-                        <div class="active"></div>
-                        <div>
-                            <i class="bi bi-building icons"></i>
-                            <p>Empresa</p>
+                    <a href="{{route('dashboard')}}">
+                        <div class="items" id="item-1">
+                            <div class="active"></div>
+                            <div>
+                                <i class="bi bi-building icons"></i>
+                                <p>Empresa</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="items" id="item-2">
-                        <i class="bi bi-people icons"></i>
-                        <p>Colaboradores</p>
-                    </div>
+                    </a>
+                    <a href="{{route('colaboradores')}}">
+                        <div class="items" id="item-2">
+                            <div class="inactive"></div>
+                            <div>
+                                <i class="bi bi-people icons"></i>
+                                <p>Colaboradores</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="bottom-info">
-                <a class="logout" href="">
+                <a class="logout" href="{{route('login')}}">
                     <i class="bi bi-door-closed icons"></i>
                     <p>Cerrar Sesión</p>
                 </a>
@@ -70,7 +77,7 @@
                         <img src="img/grupo-terra.png" alt="grupo terra logo">
                     </div>
                     <div class="name-user">
-                        <p>Fundación Grupo Terra</p>
+                        <p>{{$response->nombre}}</p>
                         <i class="bi bi-chevron-down"></i>
                     </div>
                 </div>

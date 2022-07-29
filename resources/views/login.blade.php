@@ -33,7 +33,8 @@
             <p class="text-2">EN TU CUENTA</p>
         </div>
         <div class="form">
-            <form action="">
+            <form action="{{route('iniciar_sesion')}}" method="POST">
+                @csrf
                 <div class="form-floating">
                     <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
                     <label for="email">Correo Electrónico</label>

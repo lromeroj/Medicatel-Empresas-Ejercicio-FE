@@ -89,6 +89,10 @@ section {
 .items p {
     display: inline;
 }
+#item-2 {
+    padding: 15px 0 15px 50px;
+    color: #707070;
+}
 #item-1 {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -96,10 +100,9 @@ section {
     justify-content: start;
     padding-left: 0;
 }
-#item-2 {
-    padding: 15px 0 15px 50px;
+#item-1 i{
+    color: var(--primary-color);
 }
-
 
 .top-section {
     display: flex;
@@ -134,4 +137,7 @@ section {
     align-items: center;
     color: var(--primary-color);
     font-size: 13px;
+}
+.options a {
+    text-decoration: none;
 }
