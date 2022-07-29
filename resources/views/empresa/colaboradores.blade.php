@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div>
+    <div class="colaboradores">
         <div class="colaboradores-search">
             <div class="content">
                 <h1>Colaboradores</h1>

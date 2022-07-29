@@ -1,7 +1,6 @@
 :root{
     --primary-color: #005F7F;
 }
-
 .colaboradores-search {
     display: flex;
     flex-direction: row;
@@ -23,9 +22,6 @@
     height: 40px;
     border: none;
 }
-.search-input input:focus-visible {
-    outline: -webkit-focus-ring-color auto 0;
-}
 .search-input {
     display: flex;
     align-items: center;
@@ -37,6 +33,7 @@
 }
 .contenedor-input-search label {
     padding: 0 10px;
+    
 }
 .contenedor-input-search i{
     color: var(--primary-color);
@@ -44,12 +41,19 @@
 .form-control {
     color: var(--primary-color);
 }
+.form-control:focus {
+    border: none;
+    box-shadow: 0 0 0 0 transparent;
+}
+#input-colaboradores-search{
+    display: inline;
+}
 .colaboradores-grid {
     display: grid;
     grid-template-columns: 31.3% 31.3% 31.3%;
     grid-auto-rows: 230px;
     gap: 3%;
-    max-height: 580px;
+    max-height: 540px;
     overflow-y: auto;
 }
 .colaboradores-grid::-webkit-scrollbar {
@@ -67,7 +71,7 @@
     flex-direction: row;
     align-items: center;
     gap: 25px;
-    padding: 5px 15px;
+    padding: 15px 30px;
 }
 .card-header img {
     width: 50px;
@@ -87,11 +91,12 @@
 .card-body {
     color: #707070;
     font-size: 13px;
+    padding-left: 30px;
 }
 .body-item {
     margin: 5px;
 }
 .body-item div {
     display: inline;
-    margin-left: 15px;
+    margin-left: 30px;
 }

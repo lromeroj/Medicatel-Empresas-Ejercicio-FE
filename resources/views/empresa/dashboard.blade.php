@@ -85,7 +85,7 @@
                         <p>10 FEB. 2022</p>
                     </div>
                 </div>
-                <div class="items-stats" id="covid">
+                <div class="items-stats">
                     <div class="tag">
                         <p>COVID-19</p>
                     </div>

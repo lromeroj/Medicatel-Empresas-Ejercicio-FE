@@ -3,19 +3,19 @@
 }
 .main-dashboard {
     display: grid;
-    grid-template-columns: 70% 30%;
-    height: 68vh;
-    margin: 40px 0 100px 0;
+    grid-template-columns: 67% 31.4%;
+    height: 80vh;
     gap: 15px;
 }
 .main-info {
     display: grid;
-    grid-template-rows: 35% 40% 20%;
-    gap: 15px;
+    grid-template-rows: 34% 39% 22%;
+    height: 80vh;
+    gap: 17px;
 }
 .stats{
     display: grid;
-    grid-template-columns: 31.66% 31.66% 31.66%;
+    grid-template-columns: 31.86% 31.86% 31.86%;
     gap: 15px;
 }
 .welcome {
@@ -44,6 +44,7 @@
 .welcome button {
     color: white;
     background-color: var(--primary-color);
+    font-size: 13px;
     width: 270px;
     height: 45px;
     padding: 15px;
@@ -110,17 +111,17 @@
     margin-top: 30px;
 }
 .items-stats {
+    position: relative;
     background-color: white;
     font-size: 10px;
     padding: 5px 10px;
     border: 1px solid #EFEFEF;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
 }
 .item-detail {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -129,34 +130,41 @@
     justify-content: center;
 }
 .date {
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
     color: #AAAAAA;
 }
-#covid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.date p {
+    margin-bottom: 0px;
 }
 .item-detail i, .item-covid i {
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 35px;
 }
 .item-detail h1, .item-covid h1 {
     color: var(--primary-color);
     font-size: 26px;
+    margin-bottom: 0px;
 }
 .item-detail h4, .item-covid h4 {
     color: #707070;
     font-size: 12px;
+    margin-bottom: 0px;
 }
 .tag {
     background-color: #00B2E333;
     border-radius: 100px;
     max-width: 60px;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
     color: #00B2E3;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.tag p {
+    margin-bottom: 0px;
 }
 .coming-soon-info {
     background-color: #EFEFEF;
@@ -166,7 +174,10 @@
     color: var(--primary-color);
 }
 .coming-soon-info h3 {
-    font-size: 16px;
+    font-size: 14px;
+}
+.coming-soon-info h2 {
+    font-size: 22px;
 }
 .coming-soon-info div {
     text-align: center;

@@ -29,7 +29,10 @@ section {
     grid-area: right;
     height: 100vh;
     background-color: var(--secondary-color);
-    padding: 40px 90px 120px 90px;
+    padding: 45px 70px;
+}
+.main-section{
+    margin: 0;
 }
 .bottom-info{
     width: 100%;
@@ -101,6 +104,7 @@ section {
 .top-section {
     display: flex;
     justify-content: end;
+    margin-bottom: 40px;
 }
 .top-section button{
     background-color: #00B2E3;
@@ -113,6 +117,7 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
+    font-size: 12px;
 }
 .top-section button i{
     margin-right: 15px;
