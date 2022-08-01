@@ -29,7 +29,7 @@ section {
     grid-area: right;
     height: 100vh;
     background-color: var(--secondary-color);
-    padding: 45px 70px;
+    padding: 25px 70px;
 }
 .main-section{
     margin: 0;

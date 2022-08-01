@@ -20,7 +20,7 @@
 }
 .welcome {
     background-color: white;
-    padding: 42px 0 0 48px !important;
+    padding: 22px 0 0 48px !important;
     border: 1px solid #EFEFEF;
     border-radius: 3px;
     min-width: 600px;
@@ -53,7 +53,7 @@
 }
 .profile-info {
     background-color: white;
-    padding: 18px 0 0 38px !important;
+    padding: 5px 0 0 38px !important;
     border: 1px solid #EFEFEF;
     border-radius: 3px;
     min-height: 230px;

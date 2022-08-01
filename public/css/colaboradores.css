@@ -53,7 +53,7 @@
     grid-template-columns: 31.3% 31.3% 31.3%;
     grid-auto-rows: 230px;
     gap: 3%;
-    max-height: 540px;
+    max-height: 425px;
     overflow-y: auto;
 }
 .colaboradores-grid::-webkit-scrollbar {
